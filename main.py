@@ -26,15 +26,15 @@ models = st.selectbox(
 
 # Unduh dan muat model dari Hugging Face
 if models == 'CNN - Epochs = 5':
-    model_path = hf_hub_download(repo_id="username_or_org/repo_name", filename="anit.h5")
+    model_path = hf_hub_download(repo_id="irulBES/model", filename="anit.h5")
     model = load_model(model_path)
     namaModel, epo = 'CNN', 5
 elif models == 'CNN - Epochs = 50':
-    model_path = hf_hub_download(repo_id="username_or_org/repo_name", filename="fadil.h5")
+    model_path = hf_hub_download(repo_id="irulBES/model", filename="fadil.h5")
     model = load_model(model_path)
     namaModel, epo = 'CNN', 50
 else:
-    model_path = hf_hub_download(repo_id="username_or_org/repo_name", filename="anit.h5")
+    model_path = hf_hub_download(repo_id="irulBES/model", filename="anit.h5")
     model = load_model(model_path)
     namaModel, epo = 'Teachable Machine', 50
 
@@ -113,5 +113,6 @@ with tab2:
     else:
         st.caption("⚠️ Jika kamera tidak muncul, jalankan aplikasi ini secara **lokal** dengan perintah:")
         st.code("streamlit run app.py", language="bash")
+
 
 
