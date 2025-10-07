@@ -2,10 +2,12 @@ streamlit
 opencv-python-headless
 mediapipe
 numpy
-tensorflow
-keras
-Pillow
-huggingface-hub
 protobuf
 altair
+tensorflow==2.15.0
+keras==2.15.0
+numpy==1.24.3
+pillow
+huggingface_hub
+
 
