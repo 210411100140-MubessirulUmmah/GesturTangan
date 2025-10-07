@@ -27,15 +27,15 @@ namaModel = None
 epo = None
 
 if models == 'CNN - Epochs = 5':
-    model = load_model("irulBES/model/anit.h5")
+    model = load_model("irulBES/model","anit.h5")
     namaModel = 'CNN'
     epo = 5
 elif models == 'CNN - EPOCHS = 50':
-    model = load_model("irulBES/model/fadil.h5")
+    model = load_model("irulBES/model","fadil.h5")
     namaModel = 'CNN'
     epo = 50
 elif models == 'Teachable Machine':
-    model = load_model("irulBES/model/anit.h5")
+    model = load_model("irulBES/model","anit.h5")
     namaModel = 'Teachable Machine'
     epo = 50
 
