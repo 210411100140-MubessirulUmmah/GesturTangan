@@ -14,9 +14,9 @@ untuk mengenali gestur tangan BISINDO.
 """)
 
 # Inisialisasi Mediapipe
-mpHands = mp.solutions.hands
-hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
-mpDraw = mp.solutions.drawing_utils
+# mpHands = mp.solutions.hands
+# hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
+# mpDraw = mp.solutions.drawing_utils
 
 # Pilihan model
 models = st.selectbox(
@@ -113,4 +113,5 @@ with tab2:
     else:
         st.caption("⚠️ Jika kamera tidak muncul, jalankan aplikasi ini secara **lokal** dengan perintah:")
         st.code("streamlit run app.py", language="bash")
+
 
